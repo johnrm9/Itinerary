@@ -27,6 +27,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="G6f-kr-P3f"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Fhb-zL-r1P" id="evO-ns-i67"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLb-bF-r1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
