@@ -3,6 +3,7 @@ disabled_rules: # rule identifiers to exclude from running
 # - trailing_whitespace
 # - vertical_whitespace
  - trailing_newline
+ - identifier_name
  - force_cast
 opt_in_rules: # some rules are only opt-in
  - sorted_imports
