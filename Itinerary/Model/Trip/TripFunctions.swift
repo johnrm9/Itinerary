@@ -14,16 +14,15 @@ class TripFunctions {
     }
 
     static func readTrips(completion: @escaping () -> Void) {
-        guard Data.tripModels.count > 0 else { return }
 
         DispatchQueue.global(qos: .userInteractive).async {
-            Data.tripModels.append(TripModel(title: "Trip to Bali!"))
-            Data.tripModels.append(TripModel(title: "Mexico"))
-            Data.tripModels.append(TripModel(title: "Russia Trip"))
-        }
+            if Data.tripModels.count == 0 {
+                Data.tripModels.append(TripModel(title: "Trip to Bali!"))
+                Data.tripModels.append(TripModel(title: "Mexico"))
+                Data.tripModels.append(TripModel(title: "Russia Trip"))
+            }
 
-        DispatchQueue.main.async {
-            completion()
+            DispatchQueue.main.async { completion() }
         }
     }
 
