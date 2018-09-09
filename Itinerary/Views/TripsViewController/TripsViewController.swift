@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TripsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TripsViewController: UIViewController {
     let cellId: String = "cellId"
 
     @IBOutlet weak var tableView: UITableView!
@@ -19,23 +19,7 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.dataSource = self
         tableView.delegate = self
 
-        TripFunctions.readTrips { [weak self] in
-            self?.tableView.reloadData()
-        }
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! TripsTableViewCell
-
-        cell.setup(tripModel: Data.tripModels[indexPath.row])
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Data.tripModels.count
-    }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 160
+        TripFunctions.readTrips { [weak self] in self?.tableView.reloadData() }
     }
 }
+

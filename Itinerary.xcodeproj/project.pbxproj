@@ -16,6 +16,8 @@
 		DCA3D32D214477EE009C5949 /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA3D32C214477EE009C5949 /* TripsViewController.storyboard */; };
 		DCA3D32F21447845009C5949 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D32E21447845009C5949 /* TripsViewController.swift */; };
 		DCA3D331214493E2009C5949 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D330214493E2009C5949 /* TripsTableViewCell.swift */; };
+		DCA3D33321449DD7009C5949 /* TripsViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D33221449DD7009C5949 /* TripsViewController+Protocols.swift */; };
+		DCA3D33621449FF4009C5949 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D33521449FF4009C5949 /* UIViewExtensions.swift */; };
 		DCD6FCD024623A3CE3CF7FD7 /* Pods_Itinerary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279928EC4E3AB28A3DDDE9F /* Pods_Itinerary.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		DCA3D32C214477EE009C5949 /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
 		DCA3D32E21447845009C5949 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		DCA3D330214493E2009C5949 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		DCA3D33221449DD7009C5949 /* TripsViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripsViewController+Protocols.swift"; sourceTree = "<group>"; };
+		DCA3D33521449FF4009C5949 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		DC516EC521444172008748B7 /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
+				DCA3D33421449FCE009C5949 /* Extensions */,
 				DCA3D32A2144777B009C5949 /* Views */,
 				DCA3D32221445563009C5949 /* Model */,
 				DC516EC621444172008748B7 /* AppDelegate.swift */,
@@ -127,9 +132,18 @@
 			children = (
 				DCA3D32C214477EE009C5949 /* TripsViewController.storyboard */,
 				DCA3D32E21447845009C5949 /* TripsViewController.swift */,
+				DCA3D33221449DD7009C5949 /* TripsViewController+Protocols.swift */,
 				DCA3D330214493E2009C5949 /* TripsTableViewCell.swift */,
 			);
 			path = TripsViewController;
+			sourceTree = "<group>";
+		};
+		DCA3D33421449FCE009C5949 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3D33521449FF4009C5949 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,10 +256,12 @@
 			files = (
 				DCA3D331214493E2009C5949 /* TripsTableViewCell.swift in Sources */,
 				DCA3D325214455CF009C5949 /* TripModel.swift in Sources */,
+				DCA3D33621449FF4009C5949 /* UIViewExtensions.swift in Sources */,
 				DC516EC721444172008748B7 /* AppDelegate.swift in Sources */,
 				DCA3D327214455EB009C5949 /* TripFunctions.swift in Sources */,
 				DCA3D32921445BAA009C5949 /* Data.swift in Sources */,
 				DCA3D32F21447845009C5949 /* TripsViewController.swift in Sources */,
+				DCA3D33321449DD7009C5949 /* TripsViewController+Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
