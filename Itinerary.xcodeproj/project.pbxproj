@@ -10,6 +10,9 @@
 		DC516EC721444172008748B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC516EC621444172008748B7 /* AppDelegate.swift */; };
 		DC516ECE21444173008748B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC516ECD21444173008748B7 /* Assets.xcassets */; };
 		DC516ED121444173008748B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC516ECF21444173008748B7 /* LaunchScreen.storyboard */; };
+		DC5C420221450B00005F9B01 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C420121450B00005F9B01 /* Theme.swift */; };
+		DC5C420421450BCF005F9B01 /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */; };
+		DC5C420621451015005F9B01 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5C420521451015005F9B01 /* Colors.xcassets */; };
 		DCA3D325214455CF009C5949 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D324214455CF009C5949 /* TripModel.swift */; };
 		DCA3D327214455EB009C5949 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D326214455EB009C5949 /* TripFunctions.swift */; };
 		DCA3D32921445BAA009C5949 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D32821445BAA009C5949 /* Data.swift */; };
@@ -30,6 +33,9 @@
 		DC516ECD21444173008748B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC516ED021444173008748B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC516ED221444173008748B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5C420121450B00005F9B01 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		DC5C420521451015005F9B01 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DCA3D324214455CF009C5949 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		DCA3D326214455EB009C5949 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		DCA3D32821445BAA009C5949 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		DC516EC521444172008748B7 /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
+				DC5C420021450ACD005F9B01 /* Resources */,
 				DCA3D33421449FCE009C5949 /* Extensions */,
 				DCA3D32A2144777B009C5949 /* Views */,
 				DCA3D32221445563009C5949 /* Model */,
@@ -99,6 +106,16 @@
 				DC516ED221444173008748B7 /* Info.plist */,
 			);
 			path = Itinerary;
+			sourceTree = "<group>";
+		};
+		DC5C420021450ACD005F9B01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */,
+				DC5C420121450B00005F9B01 /* Theme.swift */,
+				DC5C420521451015005F9B01 /* Colors.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		DCA3D32221445563009C5949 /* Model */ = {
@@ -206,8 +223,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5C420621451015005F9B01 /* Colors.xcassets in Resources */,
 				DC516ED121444173008748B7 /* LaunchScreen.storyboard in Resources */,
 				DCA3D32D214477EE009C5949 /* TripsViewController.storyboard in Resources */,
+				DC5C420421450BCF005F9B01 /* FugazOne-Regular.ttf in Resources */,
 				DC516ECE21444173008748B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5C420221450B00005F9B01 /* Theme.swift in Sources */,
 				DCA3D331214493E2009C5949 /* TripsTableViewCell.swift in Sources */,
 				DCA3D325214455CF009C5949 /* TripModel.swift in Sources */,
 				DCA3D33621449FF4009C5949 /* UIViewExtensions.swift in Sources */,
