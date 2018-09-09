@@ -11,6 +11,7 @@ import UIKit
 class TripsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addButton: FloatingActionButton!
 
     struct Constants {
         static let cellId: String = "cellId"
@@ -21,6 +22,7 @@ class TripsViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = Theme.background
+        addButton.layer.backgroundColor = Theme.tint.cgColor
 
         tableView.dataSource = self
         tableView.delegate = self

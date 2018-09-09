@@ -22,6 +22,7 @@
 		DCA3D33321449DD7009C5949 /* TripsViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D33221449DD7009C5949 /* TripsViewController+Protocols.swift */; };
 		DCA3D33621449FF4009C5949 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D33521449FF4009C5949 /* UIViewExtensions.swift */; };
 		DCD6FCD024623A3CE3CF7FD7 /* Pods_Itinerary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279928EC4E3AB28A3DDDE9F /* Pods_Itinerary.framework */; };
+		DCED2A5221459B99002BE305 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED2A5121459B99002BE305 /* FloatingActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DCA3D330214493E2009C5949 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
 		DCA3D33221449DD7009C5949 /* TripsViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripsViewController+Protocols.swift"; sourceTree = "<group>"; };
 		DCA3D33521449FF4009C5949 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		DCED2A5121459B99002BE305 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				DCA3D32E21447845009C5949 /* TripsViewController.swift */,
 				DCA3D33221449DD7009C5949 /* TripsViewController+Protocols.swift */,
 				DCA3D330214493E2009C5949 /* TripsTableViewCell.swift */,
+				DCED2A5121459B99002BE305 /* FloatingActionButton.swift */,
 			);
 			path = TripsViewController;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				DCA3D327214455EB009C5949 /* TripFunctions.swift in Sources */,
 				DCA3D32921445BAA009C5949 /* Data.swift in Sources */,
 				DCA3D32F21447845009C5949 /* TripsViewController.swift in Sources */,
+				DCED2A5221459B99002BE305 /* FloatingActionButton.swift in Sources */,
 				DCA3D33321449DD7009C5949 /* TripsViewController+Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

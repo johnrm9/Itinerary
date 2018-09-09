@@ -55,11 +55,17 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-NU-laC" customClass="FloatingActionButton" customModule="Itinerary" customModuleProvider="target">
+                                <rect key="frame" x="305" y="588" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="FloatingActionButtonPlus"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="G6f-kr-P3f"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="t4a-NU-laC" id="iBR-xG-vF9"/>
                         <outlet property="tableView" destination="Fhb-zL-r1P" id="evO-ns-i67"/>
                     </connections>
                 </viewController>
@@ -68,4 +74,7 @@
             <point key="canvasLocation" x="-68" y="124.58770614692655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FloatingActionButtonPlus" width="56" height="56"/>
+    </resources>
 </document>
