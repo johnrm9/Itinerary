@@ -13,12 +13,14 @@ class TripsTableViewCell: UITableViewCell {
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
 
+    var tripModel: TripModel! {
+        didSet {
+            titleLabel.text = tripModel.title
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         cardView.addShadowAndRoundedCorners()
-    }
-
-    func setup(tripModel: TripModel) {
-        titleLabel.text = tripModel.title
     }
 }
