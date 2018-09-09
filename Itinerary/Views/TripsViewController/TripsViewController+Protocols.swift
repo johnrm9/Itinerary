@@ -11,7 +11,7 @@ import UIKit
 extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! TripsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellId) as! TripsTableViewCell
         cell.tripModel = Data.tripModels[indexPath.row]
         return cell
     }
@@ -21,6 +21,6 @@ extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 160
+        return Constants.cellHeight
     }
 }

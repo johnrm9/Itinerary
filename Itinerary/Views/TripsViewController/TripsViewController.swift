@@ -9,7 +9,10 @@
 import UIKit
 
 class TripsViewController: UIViewController {
-    let cellId: String = "cellId"
+    struct Constants {
+        static let cellId: String = "cellId"
+        static let cellHeight: CGFloat = 160
+    }
 
     @IBOutlet weak var tableView: UITableView!
 
