@@ -9,12 +9,13 @@
 import UIKit
 
 class TripsViewController: UIViewController {
+
+    @IBOutlet weak var tableView: UITableView!
+
     struct Constants {
         static let cellId: String = "cellId"
         static let cellHeight: CGFloat = 160
     }
-
-    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
