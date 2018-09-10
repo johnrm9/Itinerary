@@ -13,6 +13,10 @@
 		DC5C420221450B00005F9B01 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C420121450B00005F9B01 /* Theme.swift */; };
 		DC5C420421450BCF005F9B01 /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */; };
 		DC5C420621451015005F9B01 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5C420521451015005F9B01 /* Colors.xcassets */; };
+		DC5DE6B72146289400AC69FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DE6B62146289400AC69FC /* SettingsViewController.swift */; };
+		DC5DE6B921462C8A00AC69FC /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5DE6B821462C8A00AC69FC /* SettingsViewController.storyboard */; };
+		DC5DE6BC21463C1600AC69FC /* PopupUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DE6BB21463C1600AC69FC /* PopupUIView.swift */; };
+		DC5DE6BE214640D500AC69FC /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DE6BD214640D500AC69FC /* AppUIButton.swift */; };
 		DCA3D325214455CF009C5949 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D324214455CF009C5949 /* TripModel.swift */; };
 		DCA3D327214455EB009C5949 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D326214455EB009C5949 /* TripFunctions.swift */; };
 		DCA3D32921445BAA009C5949 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D32821445BAA009C5949 /* Data.swift */; };
@@ -37,6 +41,10 @@
 		DC5C420121450B00005F9B01 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
 		DC5C420521451015005F9B01 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DC5DE6B62146289400AC69FC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DC5DE6B821462C8A00AC69FC /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		DC5DE6BB21463C1600AC69FC /* PopupUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupUIView.swift; sourceTree = "<group>"; };
+		DC5DE6BD214640D500AC69FC /* AppUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
 		DCA3D324214455CF009C5949 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		DCA3D326214455EB009C5949 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		DCA3D32821445BAA009C5949 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -99,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				DC5C420021450ACD005F9B01 /* Resources */,
-				DCA3D33421449FCE009C5949 /* Extensions */,
 				DCA3D32A2144777B009C5949 /* Views */,
 				DCA3D32221445563009C5949 /* Model */,
 				DC516EC621444172008748B7 /* AppDelegate.swift */,
@@ -113,11 +120,32 @@
 		DC5C420021450ACD005F9B01 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC5DE6BA21463B8C00AC69FC /* CustomControls */,
+				DCA3D33421449FCE009C5949 /* Extensions */,
 				DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */,
 				DC5C420121450B00005F9B01 /* Theme.swift */,
 				DC5C420521451015005F9B01 /* Colors.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC5DE6B5214627F300AC69FC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DE6B821462C8A00AC69FC /* SettingsViewController.storyboard */,
+				DC5DE6B62146289400AC69FC /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DC5DE6BA21463B8C00AC69FC /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				DCED2A5121459B99002BE305 /* FloatingActionButton.swift */,
+				DC5DE6BB21463C1600AC69FC /* PopupUIView.swift */,
+				DC5DE6BD214640D500AC69FC /* AppUIButton.swift */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		DCA3D32221445563009C5949 /* Model */ = {
@@ -141,6 +169,7 @@
 		DCA3D32A2144777B009C5949 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC5DE6B5214627F300AC69FC /* Settings */,
 				DCA3D32B21447799009C5949 /* TripsViewController */,
 			);
 			path = Views;
@@ -153,7 +182,6 @@
 				DCA3D32E21447845009C5949 /* TripsViewController.swift */,
 				DCA3D33221449DD7009C5949 /* TripsViewController+Protocols.swift */,
 				DCA3D330214493E2009C5949 /* TripsTableViewCell.swift */,
-				DCED2A5121459B99002BE305 /* FloatingActionButton.swift */,
 			);
 			path = TripsViewController;
 			sourceTree = "<group>";
@@ -230,6 +258,7 @@
 				DC516ED121444173008748B7 /* LaunchScreen.storyboard in Resources */,
 				DCA3D32D214477EE009C5949 /* TripsViewController.storyboard in Resources */,
 				DC5C420421450BCF005F9B01 /* FugazOne-Regular.ttf in Resources */,
+				DC5DE6B921462C8A00AC69FC /* SettingsViewController.storyboard in Resources */,
 				DC516ECE21444173008748B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +307,11 @@
 			files = (
 				DC5C420221450B00005F9B01 /* Theme.swift in Sources */,
 				DCA3D331214493E2009C5949 /* TripsTableViewCell.swift in Sources */,
+				DC5DE6B72146289400AC69FC /* SettingsViewController.swift in Sources */,
 				DCA3D325214455CF009C5949 /* TripModel.swift in Sources */,
 				DCA3D33621449FF4009C5949 /* UIViewExtensions.swift in Sources */,
+				DC5DE6BC21463C1600AC69FC /* PopupUIView.swift in Sources */,
+				DC5DE6BE214640D500AC69FC /* AppUIButton.swift in Sources */,
 				DC516EC721444172008748B7 /* AppDelegate.swift in Sources */,
 				DCA3D327214455EB009C5949 /* TripFunctions.swift in Sources */,
 				DCA3D32921445BAA009C5949 /* Data.swift in Sources */,

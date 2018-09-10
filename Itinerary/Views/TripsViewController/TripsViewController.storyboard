@@ -59,6 +59,9 @@
                                 <rect key="frame" x="305" y="588" width="56" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="FloatingActionButtonPlus"/>
+                                <connections>
+                                    <segue destination="Ynz-EK-K8T" kind="presentation" id="nS0-GS-jAw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,6 +75,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLb-bF-r1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68" y="124.58770614692655"/>
+        </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="gFv-dz-4hT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsViewController" id="Ynz-EK-K8T" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trh-pn-zEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="125"/>
         </scene>
     </scenes>
     <resources>

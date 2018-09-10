@@ -14,7 +14,7 @@ extension UIView {
     }
 }
 
-extension CALayer {
+fileprivate extension CALayer {
     func addShadowAndRoundedCorners() {
         shadowOpacity = 1
         shadowOffset = .zero
