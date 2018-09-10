@@ -13,4 +13,5 @@ class Theme {
     static let accent: UIColor = UIColor(named: "Accent") ?? .black
     static let backgroundColor: UIColor = UIColor(named: "Background") ?? .lightGray
     static let tintColor: UIColor = UIColor(named: "Tint") ?? .red
+    static let tintDimmedColor: UIColor = UIColor(named: "TintDimmed") ?? .red
 }

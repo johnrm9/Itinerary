@@ -29,5 +29,14 @@ class TripsViewController: UIViewController {
 
         TripFunctions.readTrips { [weak self] in self?.tableView.reloadData() }
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "toAddTripSegue" else { return }
+
+        let popup = segue.destination as! AddTripViewController
+        popup.doneSaving = { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
 }
 

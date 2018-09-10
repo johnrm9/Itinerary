@@ -13,8 +13,8 @@
 		DC5C420221450B00005F9B01 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C420121450B00005F9B01 /* Theme.swift */; };
 		DC5C420421450BCF005F9B01 /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */; };
 		DC5C420621451015005F9B01 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5C420521451015005F9B01 /* Colors.xcassets */; };
-		DC5DE6B72146289400AC69FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DE6B62146289400AC69FC /* SettingsViewController.swift */; };
-		DC5DE6B921462C8A00AC69FC /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5DE6B821462C8A00AC69FC /* SettingsViewController.storyboard */; };
+		DC5DE6B72146289400AC69FC /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DE6B62146289400AC69FC /* AddTripViewController.swift */; };
+		DC5DE6B921462C8A00AC69FC /* AddTripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5DE6B821462C8A00AC69FC /* AddTripViewController.storyboard */; };
 		DC5DE6BC21463C1600AC69FC /* PopupUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DE6BB21463C1600AC69FC /* PopupUIView.swift */; };
 		DC5DE6BE214640D500AC69FC /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DE6BD214640D500AC69FC /* AppUIButton.swift */; };
 		DCA3D325214455CF009C5949 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3D324214455CF009C5949 /* TripModel.swift */; };
@@ -41,8 +41,8 @@
 		DC5C420121450B00005F9B01 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DC5C420321450BCF005F9B01 /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
 		DC5C420521451015005F9B01 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		DC5DE6B62146289400AC69FC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		DC5DE6B821462C8A00AC69FC /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		DC5DE6B62146289400AC69FC /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		DC5DE6B821462C8A00AC69FC /* AddTripViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripViewController.storyboard; sourceTree = "<group>"; };
 		DC5DE6BB21463C1600AC69FC /* PopupUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupUIView.swift; sourceTree = "<group>"; };
 		DC5DE6BD214640D500AC69FC /* AppUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
 		DCA3D324214455CF009C5949 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
@@ -132,8 +132,6 @@
 		DC5DE6B5214627F300AC69FC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				DC5DE6B821462C8A00AC69FC /* SettingsViewController.storyboard */,
-				DC5DE6B62146289400AC69FC /* SettingsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -169,6 +167,7 @@
 		DCA3D32A2144777B009C5949 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DCD5E0682146B7840030A293 /* AddTripViewController */,
 				DC5DE6B5214627F300AC69FC /* Settings */,
 				DCA3D32B21447799009C5949 /* TripsViewController */,
 			);
@@ -192,6 +191,15 @@
 				DCA3D33521449FF4009C5949 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCD5E0682146B7840030A293 /* AddTripViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DE6B821462C8A00AC69FC /* AddTripViewController.storyboard */,
+				DC5DE6B62146289400AC69FC /* AddTripViewController.swift */,
+			);
+			path = AddTripViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +266,7 @@
 				DC516ED121444173008748B7 /* LaunchScreen.storyboard in Resources */,
 				DCA3D32D214477EE009C5949 /* TripsViewController.storyboard in Resources */,
 				DC5C420421450BCF005F9B01 /* FugazOne-Regular.ttf in Resources */,
-				DC5DE6B921462C8A00AC69FC /* SettingsViewController.storyboard in Resources */,
+				DC5DE6B921462C8A00AC69FC /* AddTripViewController.storyboard in Resources */,
 				DC516ECE21444173008748B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +315,7 @@
 			files = (
 				DC5C420221450B00005F9B01 /* Theme.swift in Sources */,
 				DCA3D331214493E2009C5949 /* TripsTableViewCell.swift in Sources */,
-				DC5DE6B72146289400AC69FC /* SettingsViewController.swift in Sources */,
+				DC5DE6B72146289400AC69FC /* AddTripViewController.swift in Sources */,
 				DCA3D325214455CF009C5949 /* TripModel.swift in Sources */,
 				DCA3D33621449FF4009C5949 /* UIViewExtensions.swift in Sources */,
 				DC5DE6BC21463C1600AC69FC /* PopupUIView.swift in Sources */,
