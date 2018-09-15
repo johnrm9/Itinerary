@@ -27,10 +27,6 @@ class AddTripViewController: UIViewController, UITextFieldDelegate, DoneSavingCa
         }
     }
 
-    @IBAction func tripTextFieldChanged(_ sender: UITextField) {
-        guard let text = sender.text else { return }
-        saveEnabled = !text.trimmingCharacters(in: .whitespaces).isEmpty
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,6 +43,11 @@ class AddTripViewController: UIViewController, UITextFieldDelegate, DoneSavingCa
         textField.resignFirstResponder()
         save(saveButton)
         return true
+    }
+
+    @IBAction func tripTextFieldChanged(_ sender: UITextField) {
+        guard let text = sender.text else { return }
+        saveEnabled = !text.trimmingCharacters(in: .whitespaces).isEmpty
     }
 
     @IBAction func cancel(_ sender: UIButton) {
